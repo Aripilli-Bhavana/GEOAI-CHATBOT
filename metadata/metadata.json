@@ -1,0 +1,317 @@
+{
+  "Uttarakhand Soil Data": {
+    "table_name" : "uttarakhand_soil",
+    "description": "Describes soil type and other details of Uttarakhand soil.",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "geom": "USER-DEFINED - Geometry",
+      "code": "Smallint - Soil Code",
+      "type": "Varchar - Soil classification (SANDY AND LITTORAL SOILS,RECENT ALLUVIAL SOILS,Not Available,BROWN FOREST AND PODZOLIC SOILS,SKELETAL SOILS,SNOW,TARAI SOILS,RECENT COLLUVIAL (PIEDMONT) DERIVED SOILS,ROCK OUTCROP)",
+      "depth": "Varchar - Soil depth categories ( Not available, Shallow(25-50cm),Very shallow(10-25cm),Extremely shallow(<10cm),Deep(depth>50cm))",
+      "erosion": "Varchar - Erosion levels (Very severe/gullied,Not available,None to slight, Severe, Moderate)",
+      "texture": "Varchar - Soil texture types (Loam,Rocky,Finer than silty clay loam, Loamy sand, Not avaiable)",
+      "productivity": "Varchar - Productivity levels (NON PRODUCTIVE,HIGHLY PRODUCTIVE,MODERATELY PRODUCTIVE,LOW PRODUCTIVE)"
+    }
+  },
+  "Uttarakhand Roads Data": {
+    "table_name" : "uttarakhand_roads",
+    "description": "Describes road types and their lengths in Uttarakhand.",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "geom": "USER-DEFINED - Geometry of roads",
+      "type": "Varchar - Type of road (Foot path,Village road  (Pucca),Cart track,District road,National highway,Village road (Kuchha),City road,State highway)",
+      "shape_leng": "Numeric - Length of road"
+    }
+  },
+  "Uttarakhand Forest Data": {
+    "table_name" : "uttarakhand_forest",
+    "description": "Describes forest types in Uttarakhand.",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "geom": "USER-DEFINED - Geometry",
+      "lu_code": "Varchar - Land Use Code",
+      "forest_description": "Varchar - Type of forest (Forest Evergreen/Semi Evergreen - Dense/Close,Forest Evergreen/Semi Evergreen - Open,Forest - Deciduous (Dry/Moist/Thorn) - Dense/Close,Forest - Forest Blank,Forest - Scrub Forest,Forest - Deciduous (Dry/Moist/Thorn) - Open,Forest - Forest Plantation"
+    }
+  },
+  "Uttarakhand Drainage Data": {
+    "table_name" : "uttarakhand_drainage",
+    "description": "Describes drainage types in Uttarakhand.",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "geom": "USER-DEFINED - Geometry of the drainage",
+      "shape_leng": "Numeric - Length of the drainage",
+      "type": "Varchar - Type of drainage (Distributory canal,Stream,Main canal,Drain,River,Stream,Branch canal)"
+    }
+  },
+  "Uttarakhand LULC (Land Use Land Cover) Data - 2015": {
+    "table_name" : "uttarakhand_lulc",
+    "description": "Land use and land cover classification for Uttarakhand in 2015.",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "geom": "USER-DEFINED - Geometry of LULC",
+      "type": "Varchar - LULC classification (Builtup-village,Scrubland Dense,Forest Plantation,Lakes/Ponds,Gullied / Ravinous land,Waterlogged / Marshy Land,Reservoir/tanks,Barren Rocky,Forest,Bultup-Mixed settlement,Builtup-Rural,Builtup-Hamlets,Sandy Area,Builtup-Transportation,Peri -urban,Snow/ Glacier,Agriculture Plantation,Builtup-Urban,Bultup-Mining/industrial,Water Body,Canal,Scrubland Open,Grassland/Grazing land,Agriculture Crop,Core urban)"
+    }
+  },
+
+"Uttarakhand earthqake Zone Data": {
+    "table_name" : "earthquake_zones",
+    "description": "Earthquake zones in Uttarakhand",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "state":"Varchar- State name(Uttarakhand)",
+      "zone":"Varchar- Zone Type (Zone IV,Zone V)",
+      "geom": "USER-DEFINED - Geometry of earthquake Zone"
+
+    }
+  },
+"Uttarakhand Flood Plains Data": {
+    "table_name" : "uttarakhand_flood_plains",
+    "description": "Flood Plains of Uttarakhand",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "flood_plain":"Varchar- Type of Flood Plain(Active Flood Plain,Older Flood Plain)",
+      "geom": "USER-DEFINED - Geometry of flood plains"
+
+    }
+  },
+"Uttarakhand Folds Data": {
+    "table_name" : "uttarakhand_folds",
+    "description": "Folds of Uttarakhand",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "fold_type":"Varchar- Type of Folds(ANTICLINE,OVERTURNED ANTICLINE,SYNFORM,ANTIFORM,SYNCLINE,OVERTURNED SYNCLINE)",
+      "geom": "USER-DEFINED - Geometry of Folds"
+
+    }
+  },
+
+"Uttarakhand Contour 100 meter Data": {
+    "table_name" : "uttarakhand_contour_100",
+    "description": "Contour of Uttarakhand with elevation interval of 100",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "contour":"numeric- Elevation Level(100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300)",
+      "geom": "USER-DEFINED - Geometry of Contour"
+
+    }
+  },
+"Uttarakhand Contour 200 meter Data": {
+    "table_name" : "uttarakhand_contour_200",
+    "description": "Contour of Uttarakhand with elevation interval of 200",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "contour":"numeric- Elevation Level(200,400,600,800,1000,1200,1400,1600,1800,2000,2200)",
+      "geom": "USER-DEFINED - Geometry of Contour"
+
+    }
+  },
+"Uttarakhand Contour 500 meter Data": {
+    "table_name" : "uttarakhand_contour_100",
+    "description": "Contour of Uttarakhand with elevation internal of 500",
+    "columns": {
+      "gid": "Integer - Unique identifier",
+      "contour":"numeric- Elevation Level(500,1000,1500,2000)",
+      "geom": "USER-DEFINED - Geometry of Contour"
+
+    }
+  },
+"Uttarakhand Districts Data": {
+    "table_name" : "uttarakhand_districts",
+    "description": "Administrative boundary of districts in Uttarakhand",
+    "columns": {
+    "district": "VarChar - Name of the District(ALMORA,TEHRI GARHWAL,UDHAM SINGH NAGAR,UTTARKASHI,HARIDWAR,NAINITAL,CHAMOLI,BAGESHWAR,CHAMPAWAT,PITHORAGARH,PAURI GARHWAL,RUDRAPRAYAG,DEHRADUN)",
+    "geom": "USER-DEFINED - Geometry of districts"
+
+    }
+  },
+"Uttarakhand Fault Data": {
+    "table_name" : "uttarakhand_fault",
+    "description": "Faults in Uttarakhand",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "name": "VarChar - Name of the fault(Main Central Thrust (MCT), Himalayan Frontal Thrust (HFT),North Almora Thrust (NAT),South Tibetan Detachment Fault (STDF),South Almora Thrust (SAT),Ramgarh Thrust (RT),Main Boundary Thrust (MBT))",
+    "geom": "USER-DEFINED - Geometry of the fault"
+
+    }
+  },
+"Uttarakhand Irrigation Data": {
+    "table_name" : "uttarakhand_irrigation",
+    "description": "Irrigation in Uttarakhand",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "IRR_type": "VarChar - Irrigation Type (IRRIGATED,UNIRRIGATE,OTHERS)",
+    "geom": "USER-DEFINED - Geometry"
+
+    }
+  },
+"Uttarakhand Glacial Lakes Data": {
+    "table_name" : "uttarakhand_glacial_lakes_type",
+    "description": "Type of Glacial lakes in Uttarakhand",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "lat": "numeric - Latitude",
+"lon": "numeric - Longitude",
+"subbasin": "varchar - Sub basin(Sarda,Ghaghara,Upper,Yamuna)",
+"lake_type": "varchar - Type of lake(Supra-glacial Lake,Cirque Erosion Lake,Other Glacial Lake,Other Glacial Erosion Lake,Lateral Moraine Dammed Lake,Other Moraine Dammed Lake,End-moraine Dammed Lake)",
+"area_ha_": "numeric - Area of the lake in hactare",
+"elev_m_": "varchar - elevation in meters",
+"geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Uttarakhand Glacier area 2020": {
+    "table_name" : "uttarakhand_glacier_area_2020",
+    "description": "Glacier area for year 2020",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacier",
+"peri": "numeric - Perimeter of the glacier",
+"lat": "numeric - Latitude",
+"long": "numeric - Longitude",
+"g_type": "numeric - Type of Glacier(Main,Hanging,Tributary)",
+"year": "varchar - Year",
+"geom": "USER-DEFINED - Geometry of the Glacier"
+
+    }
+  },
+"Uttarakhand Glacier area 2021": {
+    "table_name" : "uttarakhand_glacier_area_2021",
+    "description": "Glacier area for year 2021",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacier",
+"peri": "numeric - Perimeter of the glacier",
+"lat": "numeric - Latitude",
+"long": "numeric - Longitude",
+"g_type": "numeric - Type of Glacier(Main,Hanging,Tributary)",
+"year": "varchar - Year",
+"geom": "USER-DEFINED - Geometry of the Glacier"
+
+    }
+  },
+"Uttarakhand Glacier area 2022": {
+    "table_name" : "uttarakhand_glacier_area_2022",
+    "description": "Glacier area for year 2022",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacier",
+"peri": "numeric - Perimeter of the glacier",
+"lat": "numeric - Latitude",
+"long": "numeric - Longitude",
+"g_type": "numeric - Type of Glacier(Main,Hanging,Tributary)",
+"year": "varchar - Year",
+"geom": "USER-DEFINED - Geometry of the Glacier"
+
+    }
+  },
+"Uttarakhand Glacier area 2023": {
+    "table_name" : "uttarakhand_glacier_area_2023",
+    "description": "Glacier area for year 2023",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacier",
+"peri": "numeric - Perimeter of the glacier",
+"lat": "numeric - Latitude",
+"long": "numeric - Longitude",
+"g_type": "numeric - Type of Glacier(Main,Hanging,Tributary)",
+"year": "varchar - Year",
+"geom": "USER-DEFINED - Geometry of the Glacier"
+
+    }
+  },
+"Pre Monsoon Glacial Lakes 2020": {
+    "table_name" : "premonsoon_glaciallakes_2020",
+    "description": "Pre Monsoon Glacial Lakes 2020",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+
+"Pre Monsoon Glacial Lakes 2021": {
+    "table_name" : "premonsoon_glaciallakes_2021",
+    "description": "Pre Monsoon Glacial Lakes 2021",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Pre Monsoon Glacial Lakes 2022": {
+    "table_name" : "premonsoon_glaciallakes_2022",
+    "description": "Pre Monsoon Glacial Lakes 2022",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Pre Monsoon Glacial Lakes 2023": {
+    "table_name" : "premonsoon_glaciallakes_2023",
+    "description": "Pre Monsoon Glacial Lakes 2023",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Post Monsoon Glacial Lakes 2020": {
+    "table_name" : "premonsoon_glaciallakes_2023",
+    "description": "Pre Monsoon Glacial Lakes 2023",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "type": "varchar - Type of the glacial lake(Not Available,Peri Glacial Lake,Supra Glacial Lake,Pro Glacial Lake,Moraine Dammed Lake)",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Post Monsoon Glacial Lakes 2021": {
+    "table_name" : "premonsoon_glaciallakes_2023",
+    "description": "Pre Monsoon Glacial Lakes 2023",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "type": "varchar - Type of the glacial lake(Not Available,Peri Glacial Lake,Supra Glacial Lake,Pro Glacial Lake,Moraine Dammed Lake)",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Post Monsoon Glacial Lakes 2022": {
+    "table_name" : "premonsoon_glaciallakes_2023",
+    "description": "Pre Monsoon Glacial Lakes 2023",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "type": "varchar - Type of the glacial lake(Not Available,Peri Glacial Lake,Supra Glacial Lake,Pro Glacial Lake,Moraine Dammed Lake)",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  },
+"Post Monsoon Glacial Lakes 2023": {
+    "table_name" : "premonsoon_glaciallakes_2023",
+    "description": "Pre Monsoon Glacial Lakes 2023",
+    "columns": {
+    "gid": "Integer - Unique identifier",
+    "area": "numeric - Area of the glacial lake",
+    "type": "varchar - Type of the glacial lake(Not Available,Peri Glacial Lake,Supra Glacial Lake,Pro Glacial Lake,Moraine Dammed Lake)",
+    "year": "numeric - Year",
+    "geom": "USER-DEFINED - Geometry of the Glacial lake"
+
+    }
+  }
+  
+
+}
