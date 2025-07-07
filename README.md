@@ -1,4 +1,3 @@
-# ollamacheck
 
 A local chatbot web application powered by Ollama's LLM models (e.g., llama3), designed for geospatial data interaction and question-answering. This project demonstrates how to connect a Flask-based chatbot frontend to an Ollama language model server, process user queries, and return context-aware answers based on your dataset.
 
